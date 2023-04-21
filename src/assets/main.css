@@ -1,0 +1,73 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+
+
+th.ant-table-cell:first-child {
+  border-left: 1px solid #000 !important;
+}
+th.ant-table-cell {
+  border-top: 1px solid #000 !important;
+  border-right: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+  text-align: center!important;
+}
+/* th.ant-table-cell:last-child {
+  border-left: 1px solid #000 !important;
+  background: #fff !important;
+} */
+td.ant-table-cell {
+  border-right: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+  text-align: center;
+}
+td.ant-table-cell:first-child {
+  border-left: 1px solid #000 !important;
+}
+td.ant-table-cell:last-child {
+  border-right: 1px solid #000 !important;
+}
+.ant-table-thead > tr > th {
+  background: #9bf0d6 !important;
+  color: #333 !important;
+}
+.ant-table-body::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+.ant-table-body::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: #9bf0d6;
+}
+.ant-table-body::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: #fff;
+}
+/* .selector:not(*:root) th.ant-table-cell:last-child {
+  border-left: 1px solid #000 !important;
+  background: #fff !important;
+} */
+
+@supports(-webkit-tap-highlight-color: black) {
+  /* Matches Edge 12 - latest (92) */
+  /* Matches Chrome 16 - latest (95) */
+  /* Matches Opera 15 - latest (78) */
+
+  /* does not match Safari */
+  /* does not match Firefox */
+  th.ant-table-cell:last-child {
+    border-left: 1px solid #000 !important;
+    background: #fff !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+  }
+  
+}
